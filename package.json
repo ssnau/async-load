@@ -1,6 +1,6 @@
 {
   "name": "async-load",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a simple sync resource loader ",
   "main": "index.js",
   "scripts": {
