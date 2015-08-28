@@ -32,7 +32,7 @@ module.exports = function() {
     var urls = [].slice.call(arguments);
     return new Promise(function(resolve) {
         function next() {
-            if (!urls.length) resolve();
+            if (!urls.length) return resolve();
             var url = urls.shift();
             createTask(url).then(next);
         }
