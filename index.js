@@ -18,8 +18,11 @@ function createTask(url) {
     if (/css$/.test(url)) item = createCss(url);
 
     return new Promise(function(resolve) {
-        var item = processor(x);
-        document.head.appendChild(link);
+        if (!item) {
+            console.log(url + " is not a js, nor css!");
+            return resolve();
+        }
+        document.head.appendChild(item);
         item.onload = resolve;
         item.onerror = resolve;
     });
