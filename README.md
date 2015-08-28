@@ -1,21 +1,19 @@
 # async-load
 
-async load is a very simple resrouce loader.
-
-the only requirement is: es5 and Promise.
+A very simple resrouce loader, only ~30 lines of code.
 
 # install
 
 ```
-npm instasll async-load
+npm install async-load
 ```
 
 
 # example
 
+load bootstrap before executing the code.
 
 ```
-// load bootstrap before execute the code
 
 var load = require('aysnc-load')
 
@@ -34,6 +32,4 @@ load(
 License
 ----
 MIT
-
-
 
