@@ -26,7 +26,7 @@ function createTask(url) {
 }
 
 module.exports = function() {
-    var urls = [].slice.call(args);
+    var urls = [].slice.call(arguments);
     return new Promise(function(resolve) {
         function next() {
             if (!urls.length) resolve();
